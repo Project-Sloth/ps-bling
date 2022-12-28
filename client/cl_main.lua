@@ -12,10 +12,11 @@ end)
 
 RegisterNetEvent("ps-bling:client:effects", function(ped, coords)
 	local distance = #(GetEntityCoords(PlayerPedId()) - coords)
+	ped = NetToPed(ped)
 	if distance <= 300 then
-		if DoesEntityExist(NetToPed(ped)) and not IsEntityDead(NetToPed(ped)) then
+		if DoesEntityExist(ped) and not IsEntityDead(ped) then
 			Bling = UseParticleFxAssetNextCall("core")
-			Particle = StartParticleFxLoopedOnEntityBone("fire_wrecked_plane_cockpit", NetToPed(ped), 0.35, 0.25, 0.0, 0.0, 0.0, 0.0, GetPedBoneIndex(NetToPed(ped), 23553), 0.01, 0.0, 0.0, 0.0)
+			Particle = StartParticleFxLoopedOnEntityBone("fire_wrecked_plane_cockpit", ped, 0.35, 0.25, 0.0, 0.0, 0.0, 0.0, GetPedBoneIndex(ped, 23553), 0.01, 0.0, 0.0, 0.0)
 			Wait(2800)
 			while DoesParticleFxLoopedExist(Bling) do
 				StopParticleFxLooped(Bling, 1)
@@ -34,7 +35,7 @@ RegisterNetEvent("ps-bling:client:effects", function(ped, coords)
 				Wait(0)
 			end
 			Wait(2800*3)
-			RemoveParticleFxFromEntity(NetToPed(ped))
+			RemoveParticleFxFromEntity(ped)
 		end
 	end
 end)
