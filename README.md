@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/82112471/190289781-f36fb8c4-a98a-4792-9eb3-4b45d7adb1a4.png)
+![image](https://user-images.githubusercontent.com/82112471/213807130-12b89cf3-b909-447c-90aa-d8e3f713a609.png)
 
 # ps-bling
 NoPixel inspired chain glowing bling sciprt
