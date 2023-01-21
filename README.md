@@ -11,4 +11,4 @@ NoPixel inspired chain glowing bling sciprt
 
 
 # Showcase
-* Showcasing Video found [here](https://www.youtube.com/channel/UCl1ALVOw3u1BoZBZIVO_4zw)
+* Showcasing Video found [here](https://youtu.be/qRTQnK_P0fQ)
